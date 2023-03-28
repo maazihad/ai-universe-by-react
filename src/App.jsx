@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
+import Buttons from './components/Buttons/Buttons';
+import Cards from './components/Cards/Cards';
+import Header from './components/Header/Header';
 
 const App = () => {
   return (
-    <div>
-      <button className="btn">Button</button>
-      <button className="btn btn-primary">Button</button>
-      <button className="btn btn-secondary">Button</button>
-    </div>
+    <>
+      <Header></Header>
+      <Buttons>Sort By Date</Buttons>
+      <Cards></Cards>
+
+    </>
   );
 };
 
